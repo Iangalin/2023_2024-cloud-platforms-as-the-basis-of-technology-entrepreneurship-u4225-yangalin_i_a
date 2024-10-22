@@ -65,7 +65,7 @@
 
 Процесс копирования файлов успешно завершился, что подтверждается следующим скриншотом:
 
-![Скриншот копирования файлов](../lab1/screenshots/CD.jpg)
+![Скриншот копирования файлов](https://github.com/Iangalin/2023_2024-cloud-platforms-as-the-basis-of-technology-entrepreneurship-u4225-yangalin_i_a/blob/main/lab1/screenshots/vm-creation.png)
 
 5. Проверил, что файлы были скопированы, выполнив команду:
     ```bash
