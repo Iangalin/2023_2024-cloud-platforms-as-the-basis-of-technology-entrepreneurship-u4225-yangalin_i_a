@@ -16,7 +16,7 @@ This repository contains laboratory work reports for the course "Cloud Platforms
 - **Course**: Cloud Platforms as the Basis of Technology Entrepreneurship
 - **Year**: 2023/2024
 - **Group**: u4225
-- **Author**: Iyangalin Islam Azamatovich
+- **Author**: Yangalin Islam Azamatovich
 
 ## Lab Work Overview
 
