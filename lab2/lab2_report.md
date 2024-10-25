@@ -2,11 +2,11 @@
 ## Faculty of FICT  
 **Course**: Cloud platforms as the basis of technology entrepreneurship  
 **Year**: 2023/2024  
-**Group**: K66666  
-**Author**: Filianin Ivan Victorovich  
+**Group**: R4225
+**Author**: Yangalin Islam Azamatovich
 **Lab**: Lab1  
-**Date of creation**: 20.09.2023  
-**Date of defense**: 31.09.2023  
+**Date of creation**: 25.10.2024
+**Date of defense**: 25.10.2024
 
 ---
 
