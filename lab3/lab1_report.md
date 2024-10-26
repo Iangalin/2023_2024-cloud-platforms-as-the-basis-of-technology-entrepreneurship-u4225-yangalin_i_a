@@ -5,10 +5,10 @@
 **Course:** Облачные платформы как основа технологического предпринимательства  
 **Year:** 2023/2024  
 **Group:** K66666  
-**Author:** Филианин Иван Викторович  
+**Author:** Yangalin Islam Azamatovich
 **Lab:** Lab1  
-**Date of create:** 20.09.2023  
-**Date of finished:** 30.09.2023  
+**Date of create:** 26/10/2024
+**Date of finished:** 27/10/2024  
 
 ---
 
@@ -80,7 +80,7 @@
 
 **Схема:**
 
-![Начальное состояние](initial_state.png)
+![Начальное состояние](initial_state.drawio)
 
 **Описание:**
 
@@ -114,7 +114,7 @@
 
 **Схема:**
 
-![Тестирование партнёрами](partner_testing.png)
+![Тестирование партнёрами](partner_testing.drawio)
 
 **Описание:**
 
@@ -152,7 +152,7 @@
 
 **Схема:**
 
-![Продовое решение](production_solution.png)
+![Продовое решение](production_solution.drawio)
 
 **Описание:**
 
