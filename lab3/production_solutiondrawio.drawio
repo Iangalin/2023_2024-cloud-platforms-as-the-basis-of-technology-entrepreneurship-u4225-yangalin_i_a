@@ -1,0 +1,125 @@
+<mxfile host="Electron" modified="2024-10-26T20:40:39.640Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" version="21.7.5" etag="l1Ikrpni07B7ArnnxWXq" type="device">
+  <diagram id="production_solution" name="Продовое решение">
+    <mxGraphModel dx="1108" dy="1832" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cloudfront" value="CloudFront CDN" style="shape=mxgraph.aws4.cloudfront;whiteSpace=wrap;html=1;verticalLabelPosition=middle;verticalAlign=middle;fillColor=#fff2cc;strokeColor=#d6b656;labelPosition=left;align=right;" parent="1" vertex="1">
+          <mxGeometry x="120" y="120" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="users" value="Пользователи" style="shape=mxgraph.aws4.user;whiteSpace=wrap;html=1;verticalLabelPosition=middle;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;labelPosition=left;align=right;" parent="1" vertex="1">
+          <mxGeometry x="130" y="-110" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="internet" value="Интернет" style="shape=cloud;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalLabelPosition=middle;verticalAlign=middle;labelPosition=left;align=right;" parent="1" vertex="1">
+          <mxGeometry x="120" y="30" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="waf" value="WAF" style="shape=mxgraph.aws4.waf;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#ffe6cc;strokeColor=#e6b8af;" parent="1" vertex="1">
+          <mxGeometry x="120" y="250" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="elb" value="ELB" style="shape=mxgraph.aws4.elastic_load_balancing;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="100" y="460" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="asg" value="Auto Scaling Group" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;strokeColor=#82b366;verticalLabelPosition=top;verticalAlign=bottom;" parent="1" vertex="1">
+          <mxGeometry x="300" y="250" width="400" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="ecs1" value="ECS Container 1" style="shape=mxgraph.aws4.ecs_container;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#d9d9d9;strokeColor=#666666;" parent="asg" vertex="1">
+          <mxGeometry x="50" y="30" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ecs2" value="ECS Container 2" style="shape=mxgraph.aws4.ecs_container;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#d9d9d9;strokeColor=#666666;" parent="asg" vertex="1">
+          <mxGeometry x="160" y="30" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ecs3" value="ECS Container 3" style="shape=mxgraph.aws4.ecs_container;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#d9d9d9;strokeColor=#666666;" parent="asg" vertex="1">
+          <mxGeometry x="270" y="30" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#000000;" parent="asg" source="ecs2" target="aurora" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="10" />
+              <mxPoint x="380" y="10" />
+              <mxPoint x="380" y="40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#000000;" parent="asg" source="ecs3" target="sagemaker" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="80" />
+              <mxPoint x="430" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aurora" value="Aurora Database" style="shape=mxgraph.aws4.aurora;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#cfe2f3;strokeColor=#6fa8dc;" parent="1" vertex="1">
+          <mxGeometry x="750" y="250" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sagemaker" value="SageMaker" style="shape=mxgraph.aws4.sagemaker;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#d9d2e9;strokeColor=#8e7cc3;" parent="1" vertex="1">
+          <mxGeometry x="730" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cloudwatch" value="CloudWatch" style="shape=mxgraph.aws4.cloudwatch;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#f4cccc;strokeColor=#cc0000;" parent="1" vertex="1">
+          <mxGeometry x="660" y="120" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="users" target="internet" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="-40" />
+              <mxPoint x="140" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="internet" target="cloudfront" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="50" />
+              <mxPoint x="140" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="cloudfront" target="waf" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="190" />
+              <mxPoint x="160" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="waf" target="elb" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="390" />
+              <mxPoint x="140" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#000000;" parent="1" source="elb" target="asg" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="490" />
+              <mxPoint x="300" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge8" style="dashed=1;strokeColor=#ff0000;edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;" parent="1" source="ecs1" target="cloudwatch" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="280" />
+              <mxPoint x="750" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge9" style="dashed=1;strokeColor=#ff0000;edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;" parent="1" source="aurora" target="cloudwatch" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="290" />
+              <mxPoint x="790" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label_edge5" value="HTTP/HTTPS Traffic" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="180" y="520" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="label_edge8" value="Monitoring" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#ff0000;" parent="1" vertex="1">
+          <mxGeometry x="560" y="200" width="80" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

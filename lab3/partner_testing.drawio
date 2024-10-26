@@ -1,0 +1,52 @@
+<mxfile host="Electron" modified="2024-10-26T20:28:32.955Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" version="21.7.5" etag="WSJJogzId2z8OS1ztk8H" type="device">
+  <diagram id="partner_testing" name="Тестирование партнёрами">
+    <mxGraphModel dx="1772" dy="1060" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="partner1" value="Партнёр 1" style="shape=mxgraph.people.male;verticalLabelPosition=bottom;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="50" y="100" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="partner2" value="Партнёр 2" style="shape=mxgraph.people.female;verticalLabelPosition=bottom;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="50" y="200" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="internet" value="Интернет" style="shape=cloud;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalLabelPosition=bottom;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="150" y="150" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aws_cloud" value="AWS Cloud" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;verticalLabelPosition=top;verticalAlign=bottom;" parent="1" vertex="1">
+          <mxGeometry x="590" y="70" width="720" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="vpc" value="VPC" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;strokeColor=#82b366;verticalLabelPosition=top;verticalAlign=bottom;" parent="aws_cloud" vertex="1">
+          <mxGeometry x="40" y="50" width="540" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="ec2" value="EC2: Web Server" style="shape=mxgraph.aws4.ec2_instance;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;" parent="vpc" vertex="1">
+          <mxGeometry x="48.21428571428573" y="59.72222222222223" width="77.14285714285715" height="95.55555555555556" as="geometry" />
+        </mxCell>
+        <mxCell id="rds" value="RDS: Database" style="shape=mxgraph.aws4.rds;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#33001A;" parent="vpc" vertex="1">
+          <mxGeometry x="286.0714285714286" y="111.33123689727464" width="77.14285714285715" height="95.55555555555556" as="geometry" />
+        </mxCell>
+        <mxCell id="sagemaker" value="&lt;font color=&quot;#030303&quot;&gt;SageMaker: AI/ML Services&lt;/font&gt;" style="shape=mxgraph.aws4.sagemaker;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="vpc" vertex="1">
+          <mxGeometry x="48.21428571428573" y="255.56603773584905" width="77.14285714285715" height="95.55555555555556" as="geometry" />
+        </mxCell>
+        <mxCell id="sg_ec2" value="Security Group" style="shape=rectangle;whiteSpace=wrap;html=1;dashed=1;verticalLabelPosition=top;verticalAlign=bottom;fillColor=none;" parent="vpc" vertex="1">
+          <mxGeometry x="38.57625" y="47.776696832579184" width="96.42375000000001" height="146.79343891402712" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" value="DB Connection" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;" parent="vpc" source="ec2" target="rds" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge5" value="API Calls" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;align=center;verticalAlign=bottom;" parent="vpc" source="ec2" target="sagemaker" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;" parent="1" source="partner1" target="internet" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;" parent="1" source="partner2" target="internet" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#0000ff;" parent="1" source="internet" target="ec2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
