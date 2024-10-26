@@ -284,17 +284,5 @@
    - [Elastic Load Balancing Pricing](https://aws.amazon.com/elasticloadbalancing/pricing/)
    - [AWS CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/)
 2. **AWS Documentation:** EC2, RDS, Aurora, SageMaker, WAF, CloudFront.
-3. **Лучшие практики:** [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/).
 
----
-
-**Примечания:**
-
-- **Встраивание схем:** Схемы инфраструктуры представлены в виде изображений и должны находиться в той же папке, что и отчёт, с именами `initial_state.png`, `partner_testing.png` и `production_solution.png`.
-- **Форматирование:** Отчёт отформатирован в формате Markdown для удобства чтения и дальнейшей обработки.
-- **Актуализация данных:** Цены и характеристики ресурсов актуальны на момент написания отчёта и могут изменяться со временем.
-
----
-
-Если у вас есть дополнительные пожелания или требуется дальнейшая корректировка отчёта, пожалуйста, сообщите мне!
 
