@@ -4,9 +4,9 @@
 **Faculty:** [FICT](https://fict.itmo.ru)  
 **Course:** Облачные платформы как основа технологического предпринимательства  
 **Year:** 2023/2024  
-**Group:** K66666  
+**Group:** R4225  
 **Author:** Yangalin Islam Azamatovich
-**Lab:** Lab1  
+**Lab:** Lab4  
 **Date of create:** 26/10/2024
 **Date of finished:** 27/10/2024  
 
